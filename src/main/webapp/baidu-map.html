@@ -96,13 +96,12 @@
 		document.getElementById('allmap').style.marginLeft = 0;
 		var start = $("#start").val();
 		var end = $("#end").val();
-		var list = ["上海","苏州","南通","嘉兴"];
 		map.clearOverlays();
 		var i=$("#driving_way select").val();
 		search(start,end,routePolicy[i]);
 		function search(start,end,route){
 			var driving = new BMap.DrivingRoute(map, {renderOptions:{map: map, panel: "r-result", autoViewport: true, enableDragging : true},policy: route});
-			driving.search(start,end,{waypoints:list});
+			driving.search(start,end);
 		}
 	});
 	
@@ -217,4 +216,5 @@
 		});
 		local.search(myValue2);
 	}
+	
 </script>
