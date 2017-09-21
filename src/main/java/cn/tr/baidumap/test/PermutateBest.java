@@ -12,13 +12,13 @@ import java.util.List;
  * @date 2017年6月8日 下午4:08:56
  *
  */
-public class Permutate {
+public class PermutateBest {
 	
 	public static void main(String[] args) {
 		String[] arr = { "A", "B", "C" };
 		List<String> list = Arrays.asList(arr);
 		
-		Permutate permutate = new Permutate();
+		PermutateBest permutate = new PermutateBest();
 		permutate.array("", 3, list);
 	}
 
